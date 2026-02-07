@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus AI</title>
+  <script>
+    // SPA redirect for GitHub Pages
+    var path = window.location.pathname;
+    var basePath = '/nexus/';
+    
+    if (!path.includes('assets') && !path.includes('favicon')) {
+      var hash = '';
+      if (path.includes('?')) {
+        hash = '?' + path.split('?')[1];
+      }
+      
+      window.location.href = basePath + '#' + path.replace(basePath, '') + hash;
+    }
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
