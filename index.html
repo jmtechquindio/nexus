@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexus AI</title>
+    <script type="text/javascript">
+      (function(){
+        if(!window.location.hash && window.location.search.startsWith('/?')){
+          var segments = window.location.search.slice(2).split('&').map(s => s.replace(/~and~/g, '&'));
+          var path = '/' + segments.join('').replace(/~and~/g, '&');
+          var params = {};
+          for(var i = 0; i < segments.length; i++){
+            if(segments[i].indexOf('=') > 0){
+              var pair = segments[i].split('=');
+              params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+            }
+          }
+          history.replaceState(null, null, path + (Object.keys(params).length ? '?' + Object.keys(params).map(k => k + '=' + params[k]).join('&') : ''));
+        }
+      }());
+    </script>
   </head>
   <body class="bg-gray-950 text-white">
     <div id="root"></div>
