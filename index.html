@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus AI</title>
+    <script type="text/javascript">
+      (function(){
+        if(!window.location.hash && window.location.search.startsWith('/?')){
+          var segments = window.location.search.slice(2).split('&').map(s => s.replace(/~and~/g, '&'));
+          var path = '/' + segments.join('').replace(/~and~/g, '&');
+          var params = {};
+          for(var i = 0; i < segments.length; i++){
+            if(segments[i].indexOf('=') > 0){
+              var pair = segments[i].split('=');
+              params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+            }
+          }
+          history.replaceState(null, null, path + (Object.keys(params).length ? '?' + Object.keys(params).map(k => k + '=' + params[k]).join('&') : ''));
+        }
+      }());
+    </script>
+    <script type="module" crossorigin src="/nexus/assets/index-1a38c7c2.js"></script>
+    <link rel="stylesheet" href="/nexus/assets/index-561a7cc7.css">
+  </head>
+  <body class="bg-gray-950 text-white">
+    <div id="root"></div>
+    
+  </body>
+</html>
