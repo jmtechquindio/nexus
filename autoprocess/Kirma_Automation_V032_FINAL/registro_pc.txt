@@ -1,0 +1,33 @@
+======================================================================
+KIRMA AUTOMATION DISCOVERY V0.3.2
+Inicio real: 2026-09-17 13:03:20
+Duracion prevista: 4 horas
+13:03:20 | INICIO -> cmd.exe
+13:03:33 | cmd.exe -> explorer.exe
+13:03:34 | explorer.exe -> SearchApp.exe
+13:03:37 | SearchApp.exe -> StartMenuExperienceHost.exe
+13:03:38 | StartMenuExperienceHost.exe -> SearchApp.exe
+13:03:42 | SearchApp.exe -> StartMenuExperienceHost.exe
+13:03:43 | StartMenuExperienceHost.exe -> chrome.exe
+13:03:59 | chrome.exe -> cmd.exe
+13:04:01 | cmd.exe -> explorer.exe
+13:04:03 | explorer.exe -> cmd.exe
+13:04:09 | cmd.exe -> explorer.exe
+13:04:10 | explorer.exe -> chrome.exe
+13:05:20 | chrome.exe -> cmd.exe
+13:06:00 | cmd.exe -> DESCONOCIDO
+13:06:02 | DESCONOCIDO -> SpeechUXWiz.exe
+13:06:09 | SpeechUXWiz.exe -> cmd.exe
+13:06:17 | cmd.exe -> ScreenClippingHost.exe
+13:06:24 | ScreenClippingHost.exe -> cmd.exe
+13:06:28 | cmd.exe -> chrome.exe
+13:13:10 | chrome.exe -> explorer.exe
+13:13:32 | explorer.exe -> chrome.exe
+13:13:46 | chrome.exe -> explorer.exe
+13:13:51 | explorer.exe -> chrome.exe
+13:14:04 | chrome.exe -> explorer.exe
+13:14:07 | explorer.exe -> chrome.exe
+13:14:09 | chrome.exe -> explorer.exe
+13:14:32 | explorer.exe -> msedge.exe
+13:14:35 | msedge.exe -> explorer.exe
+13:14:55 | explorer.exe -> cmd.exe

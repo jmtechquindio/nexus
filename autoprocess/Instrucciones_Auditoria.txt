@@ -1,0 +1,120 @@
+===================================================================
+GUIA DE CONFIGURACION: AUDITORIA DE PROCESOS AUTOMATIZADA
+===================================================================
+Este documento contiene las instrucciones exactas para implementar,
+probar e interpretar el sistema de auditoria autodestructible en Windows.
+
+-------------------------------------------------------------------
+PASO 1: REQUISITO OBLIGATORIO (ACTIVAR DIRECTIVA DE AUDITORIA)
+-------------------------------------------------------------------
+Windows no registra la apertura de programas por defecto. Debes activarlo:
+1. Presiona Win + R, escribe "secpol.msc" y presiona Enter.
+2. Navega a: Directivas locales -> Directiva de auditoria.
+3. Haz doble clic en "Auditar el seguimiento de procesos".
+4. Marca la casilla "Correcto", aplica y acepta los cambios.
+5. Abre una terminal de comandos (cmd) como Administrador y ejecuta:
+   gpupdate /force
+
+-------------------------------------------------------------------
+PASO 2: CREAR EL SCRIPT DE POWERSHELL (.ps1)
+-------------------------------------------------------------------
+1. Abre el Bloc de notas.
+2. Copia y pega el codigo de abajo:
+
+# --- INICIO DEL CODIGO POWERSHELL ---
+$Exclusiones = @("svchost.exe", "conhost.exe", "taskhostw.exe", "RuntimeBroker.exe", "dllhost.exe")
+Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4688} -ErrorAction SilentlyContinue | ForEach-Object {
+    $ProcesoRuta = $_.Properties[5].Value
+    $ProcesoNombre = [System.IO.Path]::GetFileName($ProcesoRuta)
+    $Usuario = $_.Properties[1].Value
+    if ($ProcesoNombre -and ($Exclusiones -notcontains $ProcesoNombre) -and ($ProcesoRuta -notlike "*\Windows\System32\*")) {
+        [PSCustomObject]@{
+            Hora             = $_.TimeCreated
+            Proceso          = $ProcesoNombre
+            RutaCompleta     = $ProcesoRuta
+            UsuarioEjecutor  = $Usuario
+        }
+    }
+} | Export-Csv -Path "$home\Desktop\Procesos_Filtrados.csv" -NoTypeInformation -Encoding UTF8
+Unregister-ScheduledTask -TaskName "RegistrarProcesos" -Confirm:$false -ErrorAction SilentlyContinue
+# --- FIN DEL CODIGO POWERSHELL ---
+
+3. Crea una carpeta llamada "C:\Scripts" si no existe.
+4. Guarda el archivo como: C:\Scripts\RegistrarProcesos.ps1
+   (Asegurate de seleccionar "Todos los archivos" al guardar en el Bloc de notas).
+
+-------------------------------------------------------------------
+PASO 3: CREAR EL ARCHIVO DE LA TAREA PROGRAMADA (.xml)
+-------------------------------------------------------------------
+1. Abre un nuevo Bloc de notas.
+2. Copia y pega el siguiente bloque XML:
+
+<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.4" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Date>2026-09-16T00:00:00</Date>
+    <Author>Sistema</Author>
+    <Description>Ejecuta el script de PowerShell para auditar la creacion de procesos.</Description>
+  </RegistrationInfo>
+  <Triggers>
+    <BootTrigger>
+      <Enabled>true</Enabled>
+    </BootTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id="Author">
+      <UserId>S-1-5-18</UserId>
+      <RunLevel>HighestAvailable</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <IdleSettings>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <Enabled>true</Enabled>
+    <Hidden>true</Hidden>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <DisallowStartOnRemoteServerSession>false</DisallowStartOnRemoteServerSession>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+    <WakeToRun>false</WakeToRun>
+    <Priority>7</Priority>
+  </Settings>
+  <Actions Context="Author">
+    <Exec>
+      <Command>powershell.exe</Command>
+      <Arguments>-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\Scripts\RegistrarProcesos.ps1"</Arguments>
+    </Exec>
+  </Actions>
+</Task>
+
+3. Guardalo en tu Escritorio con el nombre: RegistrarProcesos.xml
+   (Usa "Todos los archivos" al guardar).
+
+-------------------------------------------------------------------
+PASO 4: IMPORTAR E INICIAR LA AUTOMATIZACION
+-------------------------------------------------------------------
+1. Busca "Programador de Tareas" en el menu de inicio de Windows y abrelo como Administrador.
+2. En el panel derecho de Acciones, selecciona "Importar tarea...".
+3. Busca y abre tu archivo "RegistrarProcesos.xml". Presiona Aceptar.
+4. Para realizar la prueba de ejecucion forzada, abre PowerShell como Administrador y corre:
+   Start-ScheduledTask -TaskName "RegistrarProcesos"
+
+-------------------------------------------------------------------
+PASO 5: INTERPRETACION DEL REPORTE GENERADO
+-------------------------------------------------------------------
+El archivo "Procesos_Filtrados.csv" aparecera en tu Escritorio con las columnas:
+- Hora: Instante exacto del inicio del ejecutable.
+- Proceso: Nombre corto del programa (ej. chrome.exe).
+- RutaCompleta: Directorio de origen (util para detectar malware en carpetas temporales).
+- UsuarioEjecutor: Cuenta de usuario responsable de lanzar el programa.
+
+Al finalizar la ejecucion, la tarea programada se eliminara sola de la lista de Windows de forma permanente.
+===================================================================

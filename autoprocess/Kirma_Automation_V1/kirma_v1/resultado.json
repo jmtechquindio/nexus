@@ -1,0 +1,133 @@
+{
+  "version": "1.0.0",
+  "inicio": "2026-09-17T13:15:42.239412",
+  "fin": "2026-09-17T17:15:00.248635",
+  "muestras": 13956,
+  "cambios_detectados": 149,
+  "aplicaciones_diferentes": 21,
+  "duracion_por_aplicacion_segundos": {
+    "explorer.exe": 241.41652700000003,
+    "notepad.exe": 96.08866299999998,
+    "SearchApp.exe": 58.06346400000001,
+    "python.exe": 9.007496999999999,
+    "msedge.exe": 3.00375,
+    "AnyDesk.exe": 2.001989,
+    "chrome.exe": 12919.595919000001,
+    "WinRAR.exe": 25.041301,
+    "cmd.exe": 1.001125,
+    "WINWORD.EXE": 29.034506999999998,
+    "StartMenuExperienceHost.exe": 1.001867,
+    "DESCONOCIDO": 408.44173499999994,
+    "ApplicationFrameHost.exe": 49.162503,
+    "msiexec.exe": 193.039817,
+    "UiPath.Connected.Installer.Ui.exe": 71.10179,
+    "rundll32.exe": 1.005125,
+    "ShellExperienceHost.exe": 15.08901,
+    "ScreenClippingHost.exe": 23.031757,
+    "Antigravity.exe": 11.037967000000002,
+    "Photos.exe": 199.819912,
+    "LockApp.exe": 1.022998
+  },
+  "transiciones": [
+    {
+      "de": "chrome.exe",
+      "a": "explorer.exe",
+      "cantidad": 25
+    },
+    {
+      "de": "explorer.exe",
+      "a": "chrome.exe",
+      "cantidad": 24
+    },
+    {
+      "de": "chrome.exe",
+      "a": "DESCONOCIDO",
+      "cantidad": 5
+    },
+    {
+      "de": "explorer.exe",
+      "a": "notepad.exe",
+      "cantidad": 4
+    },
+    {
+      "de": "notepad.exe",
+      "a": "explorer.exe",
+      "cantidad": 4
+    },
+    {
+      "de": "DESCONOCIDO",
+      "a": "chrome.exe",
+      "cantidad": 4
+    },
+    {
+      "de": "ApplicationFrameHost.exe",
+      "a": "chrome.exe",
+      "cantidad": 4
+    },
+    {
+      "de": "notepad.exe",
+      "a": "SearchApp.exe",
+      "cantidad": 3
+    },
+    {
+      "de": "SearchApp.exe",
+      "a": "explorer.exe",
+      "cantidad": 3
+    },
+    {
+      "de": "chrome.exe",
+      "a": "ApplicationFrameHost.exe",
+      "cantidad": 3
+    }
+  ],
+  "patrones_repetitivos": [
+    {
+      "secuencia": [
+        "explorer.exe",
+        "chrome.exe",
+        "explorer.exe",
+        "chrome.exe"
+      ],
+      "ocurrencias": 9,
+      "evidencia": "OBSERVACION",
+      "estado": "REQUIERE_VALIDACION_HUMANA"
+    },
+    {
+      "secuencia": [
+        "chrome.exe",
+        "explorer.exe",
+        "chrome.exe",
+        "explorer.exe"
+      ],
+      "ocurrencias": 8,
+      "evidencia": "OBSERVACION",
+      "estado": "REQUIERE_VALIDACION_HUMANA"
+    },
+    {
+      "secuencia": [
+        "explorer.exe",
+        "chrome.exe",
+        "DESCONOCIDO",
+        "chrome.exe"
+      ],
+      "ocurrencias": 3,
+      "evidencia": "OBSERVACION",
+      "estado": "REQUIERE_VALIDACION_HUMANA"
+    },
+    {
+      "secuencia": [
+        "chrome.exe",
+        "explorer.exe",
+        "chrome.exe",
+        "DESCONOCIDO"
+      ],
+      "ocurrencias": 3,
+      "evidencia": "OBSERVACION",
+      "estado": "REQUIERE_VALIDACION_HUMANA"
+    }
+  ],
+  "limitaciones": [
+    "Solo se registra la aplicacion en primer plano.",
+    "No se registran teclas, contraseñas, capturas, contenido de documentos ni URLs."
+  ]
+}

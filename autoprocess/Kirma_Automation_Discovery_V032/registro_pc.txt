@@ -1,0 +1,22 @@
+======================================================================
+KIRMA AUTOMATION DISCOVERY V0.3.2
+======================================================================
+Inicio: 2026-09-17 12:48:49
+Duracion prevista: 300 segundos
+Intervalo: 1 segundo(s)
+Autorizacion confirmada por el operador.
+
+REGISTRO DE CAMBIOS
+----------------------------------------------------------------------
+12:48:49 | INICIO -> cmd.exe
+12:49:01 | cmd.exe -> SearchApp.exe
+12:49:06 | SearchApp.exe -> python.exe
+12:49:10 | python.exe -> cmd.exe
+12:49:15 | cmd.exe -> SearchApp.exe
+12:49:22 | SearchApp.exe -> notepad.exe
+12:49:25 | notepad.exe -> cmd.exe
+12:49:28 | cmd.exe -> SearchApp.exe
+12:49:38 | SearchApp.exe -> StartMenuExperienceHost.exe
+12:49:39 | StartMenuExperienceHost.exe -> explorer.exe
+12:49:49 | explorer.exe -> Antigravity.exe
+12:49:51 | Antigravity.exe -> cmd.exe

@@ -1,0 +1,1 @@
+V0.3.2 FINAL\nDoble clic en EJECUTAR_KIRMA_AUTOMATION.vbs. CMD oculto. Python y psutil se intentan instalar automáticamente. Las 4 horas comienzan después de SI + ENTER. Solo registra aplicación activa; no teclas, contraseñas, capturas, contenido ni URLs.\n

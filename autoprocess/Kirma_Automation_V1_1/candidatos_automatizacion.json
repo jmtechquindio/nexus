@@ -1,0 +1,213 @@
+[
+  {
+    "tipo": "SECUENCIA_REPETITIVA",
+    "prioridad_de_revision": "ALTA",
+    "secuencia": [
+      "chrome.exe",
+      "explorer.exe",
+      "chrome.exe"
+    ],
+    "ocurrencias": 11,
+    "aplicaciones_involucradas": 2,
+    "interpretacion": "Secuencia repetitiva de aplicaciones que puede corresponder a una tarea recurrente.",
+    "siguiente_paso": "Observar manualmente una ocurrencia y documentar las acciones reales antes de automatizar.",
+    "limitacion": "El registro solo conoce cambios de aplicacion; no demuestra por si solo que la tarea sea automatizable."
+  },
+  {
+    "tipo": "SECUENCIA_REPETITIVA",
+    "prioridad_de_revision": "ALTA",
+    "secuencia": [
+      "explorer.exe",
+      "chrome.exe",
+      "explorer.exe"
+    ],
+    "ocurrencias": 10,
+    "aplicaciones_involucradas": 2,
+    "interpretacion": "Secuencia repetitiva de aplicaciones que puede corresponder a una tarea recurrente.",
+    "siguiente_paso": "Observar manualmente una ocurrencia y documentar las acciones reales antes de automatizar.",
+    "limitacion": "El registro solo conoce cambios de aplicacion; no demuestra por si solo que la tarea sea automatizable."
+  },
+  {
+    "tipo": "SECUENCIA_REPETITIVA",
+    "prioridad_de_revision": "ALTA",
+    "secuencia": [
+      "explorer.exe",
+      "chrome.exe",
+      "explorer.exe",
+      "chrome.exe"
+    ],
+    "ocurrencias": 9,
+    "aplicaciones_involucradas": 2,
+    "interpretacion": "Secuencia repetitiva de aplicaciones que puede corresponder a una tarea recurrente.",
+    "siguiente_paso": "Observar manualmente una ocurrencia y documentar las acciones reales antes de automatizar.",
+    "limitacion": "El registro solo conoce cambios de aplicacion; no demuestra por si solo que la tarea sea automatizable."
+  },
+  {
+    "tipo": "SECUENCIA_REPETITIVA",
+    "prioridad_de_revision": "ALTA",
+    "secuencia": [
+      "chrome.exe",
+      "explorer.exe",
+      "chrome.exe",
+      "explorer.exe"
+    ],
+    "ocurrencias": 8,
+    "aplicaciones_involucradas": 2,
+    "interpretacion": "Secuencia repetitiva de aplicaciones que puede corresponder a una tarea recurrente.",
+    "siguiente_paso": "Observar manualmente una ocurrencia y documentar las acciones reales antes de automatizar.",
+    "limitacion": "El registro solo conoce cambios de aplicacion; no demuestra por si solo que la tarea sea automatizable."
+  },
+  {
+    "tipo": "SECUENCIA_REPETITIVA",
+    "prioridad_de_revision": "ALTA",
+    "secuencia": [
+      "explorer.exe",
+      "chrome.exe",
+      "explorer.exe",
+      "chrome.exe",
+      "explorer.exe"
+    ],
+    "ocurrencias": 6,
+    "aplicaciones_involucradas": 2,
+    "interpretacion": "Secuencia repetitiva de aplicaciones que puede corresponder a una tarea recurrente.",
+    "siguiente_paso": "Observar manualmente una ocurrencia y documentar las acciones reales antes de automatizar.",
+    "limitacion": "El registro solo conoce cambios de aplicacion; no demuestra por si solo que la tarea sea automatizable."
+  },
+  {
+    "tipo": "SECUENCIA_REPETITIVA",
+    "prioridad_de_revision": "ALTA",
+    "secuencia": [
+      "chrome.exe",
+      "explorer.exe",
+      "chrome.exe",
+      "explorer.exe",
+      "chrome.exe"
+    ],
+    "ocurrencias": 5,
+    "aplicaciones_involucradas": 2,
+    "interpretacion": "Secuencia repetitiva de aplicaciones que puede corresponder a una tarea recurrente.",
+    "siguiente_paso": "Observar manualmente una ocurrencia y documentar las acciones reales antes de automatizar.",
+    "limitacion": "El registro solo conoce cambios de aplicacion; no demuestra por si solo que la tarea sea automatizable."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "chrome.exe",
+      "a": "explorer.exe"
+    },
+    "ocurrencias": 22,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "explorer.exe",
+      "a": "chrome.exe"
+    },
+    "ocurrencias": 22,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "ApplicationFrameHost.exe",
+      "a": "chrome.exe"
+    },
+    "ocurrencias": 4,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "explorer.exe",
+      "a": "SearchApp.exe"
+    },
+    "ocurrencias": 3,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "notepad.exe",
+      "a": "explorer.exe"
+    },
+    "ocurrencias": 3,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "chrome.exe",
+      "a": "ApplicationFrameHost.exe"
+    },
+    "ocurrencias": 3,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "msiexec.exe",
+      "a": "chrome.exe"
+    },
+    "ocurrencias": 3,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "chrome.exe",
+      "a": "DESCONOCIDO"
+    },
+    "ocurrencias": 3,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "DESCONOCIDO",
+      "a": "chrome.exe"
+    },
+    "ocurrencias": 3,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "chrome.exe",
+      "a": "Antigravity.exe"
+    },
+    "ocurrencias": 3,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  },
+  {
+    "tipo": "TRANSICION_FRECUENTE",
+    "prioridad_de_revision": "MEDIA",
+    "transicion": {
+      "de": "ApplicationFrameHost.exe",
+      "a": "explorer.exe"
+    },
+    "ocurrencias": 3,
+    "interpretacion": "Cambio de aplicacion frecuente.",
+    "siguiente_paso": "Comprobar si la transicion forma parte de una tarea repetitiva."
+  }
+]

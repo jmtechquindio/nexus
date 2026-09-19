@@ -1,0 +1,9 @@
+{
+  "duracion_horas": 4,
+  "intervalo_segundos": 1,
+  "min_repeticiones": 3,
+  "longitud_secuencia": 4,
+  "longitudes_adicionales": [3, 5],
+  "top_transiciones": 15,
+  "intervalo_estado_segundos": 10
+}

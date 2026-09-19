@@ -1,0 +1,80 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:SA Pacific Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0500
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Lorena Alejandra Montenegro Avellaneda:mailto:lmontenegro@mint
+ ic.gov.co
+ATTACH:CID:20a3327d-7e47-422e-b8f4-c41b3e659d5e
+DESCRIPTION;LANGUAGE=es-CO:¡CONFIRMAMOS TU INSCRIPCIÓN!\n\nLlega AvanzaTE
+ C Fest 2026: Tecnología que reconstruye a Colombia\, un espacio liderado 
+ por el Ministerio TIC junto a 18 gigantes tecnológicos para conocer cómo
+  las herramientas digitales y el talento se unen para transformar el país
+ .\n\nSi estás en Bogotá\, ¡acércate y vive la experiencia presencial!\
+ n\n📅 Jueves 17 de septiembre\n⏰ Apertura: 7:30 a.m. | Inicio: 8:00 a.
+ m.\n📍 Universidad Militar Nueva Granada  - Aula Máxima\nCra. 11 # 101 
+ - 80\, Bogotá\n[cid:20a3327d-7e47-422e-b8f4-c41b3e659d5e]\nDeclinación d
+ e responsabilidades\nPara más información haga clic aquí<http://www.min
+ tic.gov.co/info/declinacion_responsabilidad.htm>\n
+UID:040000008200E00074C5B7101A82E00800000000E6B9A05B2B46DD01000000000000000
+ 0100000007542289EEDCD8642915F892F573486E4
+SUMMARY;LANGUAGE=es-CO:🚀¡Te esperamos! AvanzaTEC Fest 2026 | Tecnologí
+ a que reconstruye a Colombia
+DTSTART;TZID=SA Pacific Standard Time:20260917T080000
+DTEND;TZID=SA Pacific Standard Time:20260917T083000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20260916T224255Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=es-CO:Universidad militar nueva granada (Avenida Carrera 
+ 11 #100-20\, Usaquén Distrito Capital\, Colombia)
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2125038765
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Universidad militar nueva granada
+X-MICROSOFT-LOCATIONSOURCE:LocationServices
+X-MICROSOFT-LOCATIONURI:https://www.bingapis.com/api/v6/localbusinesses/YNF
+ 55B2E852D4FA989?setLang=es-MX
+X-MICROSOFT-LATITUDE:4.68339
+X-MICROSOFT-LONGITUDE:-74.0426
+X-MICROSOFT-LOCATIONSTREET:Avenida Carrera 11 #100-20
+X-MICROSOFT-LOCATIONCITY:Usaquén
+X-MICROSOFT-LOCATIONSTATE:Distrito Capital
+X-MICROSOFT-LOCATIONCOUNTRY:Colombia
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Universidad militar nueva granada"\,
+ "LocationAnnotation":""\,"LocationSource":1\,"LocationUri":"https://www.bi
+ ngapis.com/api/v6/localbusinesses/YNF55B2E852D4FA989?setLang=es-MX"\,"Lati
+ tude":4.68339\,"Longitude":-74.0426\,"LocationStreet":"Avenida Carrera 11 
+ #100-20"\,"LocationCity":"Usaquén"\,"LocationState":"Distrito Capital"\,"
+ LocationCountry":"Colombia"\,"LocationPostalCode":""\,"LocationFullAddress
+ ":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

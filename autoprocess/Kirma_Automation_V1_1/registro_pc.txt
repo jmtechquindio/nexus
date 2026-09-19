@@ -1,0 +1,210 @@
+======================================================================
+KIRMA AUTOMATION V1.1.0
+======================================================================
+Inicio: 2026-09-17 13:19:46
+Duracion prevista: 4 hora(s)
+Intervalo: 1.0 segundo(s)
+Modo: descubrimiento de patrones y candidatos a automatizacion.
+Solo se registra la aplicacion en primer plano.
+13:19:46 | INICIO -> explorer.exe
+13:19:50 | explorer.exe -> SearchApp.exe
+13:20:14 | SearchApp.exe -> StartMenuExperienceHost.exe
+13:20:15 | StartMenuExperienceHost.exe -> WINWORD.EXE
+13:20:32 | WINWORD.EXE -> explorer.exe
+13:20:36 | explorer.exe -> SearchApp.exe
+13:20:43 | SearchApp.exe -> chrome.exe
+13:21:31 | chrome.exe -> SearchApp.exe
+13:21:35 | SearchApp.exe -> WINWORD.EXE
+13:21:48 | WINWORD.EXE -> chrome.exe
+13:21:53 | chrome.exe -> explorer.exe
+13:21:59 | explorer.exe -> notepad.exe
+13:22:24 | notepad.exe -> explorer.exe
+13:22:48 | explorer.exe -> chrome.exe
+13:44:00 | chrome.exe -> ApplicationFrameHost.exe
+13:44:06 | ApplicationFrameHost.exe -> chrome.exe
+13:49:36 | chrome.exe -> msiexec.exe
+13:49:47 | msiexec.exe -> DESCONOCIDO
+13:49:48 | DESCONOCIDO -> msiexec.exe
+13:49:59 | msiexec.exe -> chrome.exe
+13:50:48 | chrome.exe -> UiPath.Connected.Installer.Ui.exe
+13:51:00 | UiPath.Connected.Installer.Ui.exe -> msiexec.exe
+13:51:12 | msiexec.exe -> UiPath.Connected.Installer.Ui.exe
+13:51:48 | UiPath.Connected.Installer.Ui.exe -> chrome.exe
+14:06:53 | chrome.exe -> msiexec.exe
+14:07:11 | msiexec.exe -> DESCONOCIDO
+14:07:41 | DESCONOCIDO -> msiexec.exe
+14:09:47 | msiexec.exe -> rundll32.exe
+14:09:48 | rundll32.exe -> msiexec.exe
+14:10:00 | msiexec.exe -> chrome.exe
+14:11:10 | chrome.exe -> explorer.exe
+14:11:13 | explorer.exe -> msiexec.exe
+14:11:17 | msiexec.exe -> chrome.exe
+14:11:41 | chrome.exe -> UiPath.Connected.Installer.Ui.exe
+14:11:45 | UiPath.Connected.Installer.Ui.exe -> DESCONOCIDO
+14:11:48 | DESCONOCIDO -> UiPath.Connected.Installer.Ui.exe
+14:11:57 | UiPath.Connected.Installer.Ui.exe -> ShellExperienceHost.exe
+14:11:58 | ShellExperienceHost.exe -> UiPath.Connected.Installer.Ui.exe
+14:12:10 | UiPath.Connected.Installer.Ui.exe -> ApplicationFrameHost.exe
+14:12:20 | ApplicationFrameHost.exe -> chrome.exe
+14:18:50 | chrome.exe -> ScreenClippingHost.exe
+14:18:54 | ScreenClippingHost.exe -> chrome.exe
+14:24:07 | chrome.exe -> ApplicationFrameHost.exe
+14:24:11 | ApplicationFrameHost.exe -> chrome.exe
+14:43:22 | chrome.exe -> DESCONOCIDO
+14:43:23 | DESCONOCIDO -> chrome.exe
+14:43:24 | chrome.exe -> Antigravity.exe
+14:43:30 | Antigravity.exe -> chrome.exe
+14:44:17 | chrome.exe -> ScreenClippingHost.exe
+14:44:23 | ScreenClippingHost.exe -> chrome.exe
+15:03:49 | chrome.exe -> Antigravity.exe
+15:03:54 | Antigravity.exe -> chrome.exe
+15:31:54 | chrome.exe -> explorer.exe
+15:31:57 | explorer.exe -> chrome.exe
+15:41:29 | chrome.exe -> DESCONOCIDO
+15:41:30 | DESCONOCIDO -> chrome.exe
+15:47:15 | chrome.exe -> ShellExperienceHost.exe
+15:47:30 | ShellExperienceHost.exe -> chrome.exe
+15:50:23 | chrome.exe -> explorer.exe
+15:50:26 | explorer.exe -> chrome.exe
+15:51:22 | chrome.exe -> explorer.exe
+15:51:39 | explorer.exe -> chrome.exe
+15:51:45 | chrome.exe -> explorer.exe
+15:51:48 | explorer.exe -> chrome.exe
+15:53:39 | chrome.exe -> explorer.exe
+15:53:47 | explorer.exe -> chrome.exe
+15:55:01 | chrome.exe -> explorer.exe
+15:55:04 | explorer.exe -> chrome.exe
+15:55:06 | chrome.exe -> explorer.exe
+15:55:08 | explorer.exe -> chrome.exe
+15:57:24 | chrome.exe -> Antigravity.exe
+15:57:25 | Antigravity.exe -> ApplicationFrameHost.exe
+15:57:35 | ApplicationFrameHost.exe -> explorer.exe
+15:57:40 | explorer.exe -> ApplicationFrameHost.exe
+15:57:43 | ApplicationFrameHost.exe -> explorer.exe
+15:58:28 | explorer.exe -> SearchApp.exe
+15:58:40 | SearchApp.exe -> explorer.exe
+15:58:53 | explorer.exe -> chrome.exe
+16:10:32 | chrome.exe -> explorer.exe
+16:10:37 | explorer.exe -> chrome.exe
+16:11:08 | chrome.exe -> explorer.exe
+16:11:09 | explorer.exe -> notepad.exe
+16:11:10 | notepad.exe -> explorer.exe
+16:11:12 | explorer.exe -> chrome.exe
+16:11:43 | chrome.exe -> explorer.exe
+16:12:00 | explorer.exe -> Photos.exe
+16:15:20 | Photos.exe -> explorer.exe
+16:15:32 | explorer.exe -> chrome.exe
+16:17:04 | chrome.exe -> explorer.exe
+16:17:09 | explorer.exe -> chrome.exe
+16:22:32 | chrome.exe -> explorer.exe
+16:22:35 | explorer.exe -> chrome.exe
+16:31:51 | chrome.exe -> explorer.exe
+16:31:53 | explorer.exe -> chrome.exe
+16:33:30 | chrome.exe -> DESCONOCIDO
+16:39:34 | DESCONOCIDO -> LockApp.exe
+16:39:35 | LockApp.exe -> DESCONOCIDO
+16:39:36 | DESCONOCIDO -> chrome.exe
+16:42:35 | chrome.exe -> explorer.exe
+16:42:37 | explorer.exe -> chrome.exe
+16:44:23 | chrome.exe -> explorer.exe
+16:44:26 | explorer.exe -> chrome.exe
+16:47:09 | chrome.exe -> explorer.exe
+16:47:11 | explorer.exe -> chrome.exe
+16:47:32 | chrome.exe -> explorer.exe
+16:47:36 | explorer.exe -> chrome.exe
+16:48:01 | chrome.exe -> explorer.exe
+16:48:03 | explorer.exe -> chrome.exe
+16:50:02 | chrome.exe -> explorer.exe
+16:50:03 | explorer.exe -> chrome.exe
+16:50:57 | chrome.exe -> explorer.exe
+16:50:59 | explorer.exe -> chrome.exe
+16:51:02 | chrome.exe -> notepad.exe
+16:51:20 | notepad.exe -> ScreenClippingHost.exe
+16:51:33 | ScreenClippingHost.exe -> notepad.exe
+16:51:41 | notepad.exe -> SearchApp.exe
+16:51:44 | SearchApp.exe -> notepad.exe
+16:51:46 | notepad.exe -> explorer.exe
+16:51:48 | explorer.exe -> ApplicationFrameHost.exe
+16:51:54 | ApplicationFrameHost.exe -> chrome.exe
+17:14:47 | chrome.exe -> ApplicationFrameHost.exe
+17:14:56 | ApplicationFrameHost.exe -> explorer.exe
+17:14:57 | explorer.exe -> DESCONOCIDO
+
+======================================================================
+ANALISIS KIRMA AUTOMATION V1.1.0
+======================================================================
+Muestras: 13706
+Cambios detectados: 122
+Aplicaciones diferentes: 16
+
+DURACION APROXIMADA POR APLICACION
+chrome.exe: 12799.6 segundos (213.3 minutos)
+DESCONOCIDO: 403.2 segundos (6.7 minutos)
+explorer.exe: 208.7 segundos (3.5 minutos)
+Photos.exe: 199.9 segundos (3.3 minutos)
+msiexec.exe: 193.2 segundos (3.2 minutos)
+UiPath.Connected.Installer.Ui.exe: 72.4 segundos (1.2 minutos)
+notepad.exe: 54.1 segundos (0.9 minutos)
+SearchApp.exe: 50.1 segundos (0.8 minutos)
+ApplicationFrameHost.exe: 48.1 segundos (0.8 minutos)
+WINWORD.EXE: 30.1 segundos (0.5 minutos)
+ScreenClippingHost.exe: 23.0 segundos (0.4 minutos)
+ShellExperienceHost.exe: 16.0 segundos (0.3 minutos)
+Antigravity.exe: 12.0 segundos (0.2 minutos)
+rundll32.exe: 1.0 segundos (0.0 minutos)
+LockApp.exe: 1.0 segundos (0.0 minutos)
+StartMenuExperienceHost.exe: 1.0 segundos (0.0 minutos)
+
+TRANSICIONES MAS FRECUENTES
+chrome.exe -> explorer.exe: 22 veces
+explorer.exe -> chrome.exe: 22 veces
+ApplicationFrameHost.exe -> chrome.exe: 4 veces
+explorer.exe -> SearchApp.exe: 3 veces
+notepad.exe -> explorer.exe: 3 veces
+chrome.exe -> ApplicationFrameHost.exe: 3 veces
+msiexec.exe -> chrome.exe: 3 veces
+chrome.exe -> DESCONOCIDO: 3 veces
+DESCONOCIDO -> chrome.exe: 3 veces
+chrome.exe -> Antigravity.exe: 3 veces
+ApplicationFrameHost.exe -> explorer.exe: 3 veces
+explorer.exe -> notepad.exe: 2 veces
+chrome.exe -> msiexec.exe: 2 veces
+msiexec.exe -> DESCONOCIDO: 2 veces
+DESCONOCIDO -> msiexec.exe: 2 veces
+
+PATRONES REPETITIVOS
+PATRON: chrome.exe -> explorer.exe -> chrome.exe | Ocurrencias: 11 | Longitud: 3
+Estado: REQUIERE VALIDACION HUMANA
+PATRON: explorer.exe -> chrome.exe -> explorer.exe | Ocurrencias: 10 | Longitud: 3
+Estado: REQUIERE VALIDACION HUMANA
+PATRON: explorer.exe -> chrome.exe -> explorer.exe -> chrome.exe | Ocurrencias: 9 | Longitud: 4
+Estado: REQUIERE VALIDACION HUMANA
+PATRON: chrome.exe -> explorer.exe -> chrome.exe -> explorer.exe | Ocurrencias: 8 | Longitud: 4
+Estado: REQUIERE VALIDACION HUMANA
+PATRON: explorer.exe -> chrome.exe -> explorer.exe -> chrome.exe -> explorer.exe | Ocurrencias: 6 | Longitud: 5
+Estado: REQUIERE VALIDACION HUMANA
+PATRON: chrome.exe -> explorer.exe -> chrome.exe -> explorer.exe -> chrome.exe | Ocurrencias: 5 | Longitud: 5
+Estado: REQUIERE VALIDACION HUMANA
+
+CANDIDATOS A AUTOMATIZACION
+CANDIDATO: chrome.exe -> explorer.exe -> chrome.exe | Ocurrencias: 11 | Prioridad: ALTA
+CANDIDATO: explorer.exe -> chrome.exe -> explorer.exe | Ocurrencias: 10 | Prioridad: ALTA
+CANDIDATO: explorer.exe -> chrome.exe -> explorer.exe -> chrome.exe | Ocurrencias: 9 | Prioridad: ALTA
+CANDIDATO: chrome.exe -> explorer.exe -> chrome.exe -> explorer.exe | Ocurrencias: 8 | Prioridad: ALTA
+CANDIDATO: explorer.exe -> chrome.exe -> explorer.exe -> chrome.exe -> explorer.exe | Ocurrencias: 6 | Prioridad: ALTA
+CANDIDATO: chrome.exe -> explorer.exe -> chrome.exe -> explorer.exe -> chrome.exe | Ocurrencias: 5 | Prioridad: ALTA
+TRANSICION: chrome.exe -> explorer.exe | Ocurrencias: 22
+TRANSICION: explorer.exe -> chrome.exe | Ocurrencias: 22
+TRANSICION: ApplicationFrameHost.exe -> chrome.exe | Ocurrencias: 4
+TRANSICION: explorer.exe -> SearchApp.exe | Ocurrencias: 3
+TRANSICION: notepad.exe -> explorer.exe | Ocurrencias: 3
+TRANSICION: chrome.exe -> ApplicationFrameHost.exe | Ocurrencias: 3
+TRANSICION: msiexec.exe -> chrome.exe | Ocurrencias: 3
+TRANSICION: chrome.exe -> DESCONOCIDO | Ocurrencias: 3
+TRANSICION: DESCONOCIDO -> chrome.exe | Ocurrencias: 3
+TRANSICION: chrome.exe -> Antigravity.exe | Ocurrencias: 3
+TRANSICION: ApplicationFrameHost.exe -> explorer.exe | Ocurrencias: 3
+Detalle estructurado: candidatos_automatizacion.json
+
+No se registran teclas, contraseñas, capturas, contenido ni URLs.
+Fin: 2026-09-17 17:59:20
